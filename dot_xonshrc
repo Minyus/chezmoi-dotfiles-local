@@ -141,14 +141,6 @@ def _run(script, verbose=True):
     return subprocess.run(script, shell=isinstance(script, str), capture_output=True)
 
 
-# Enable automatic "ls" upon "cd"
-@events.on_chdir
-def cl(olddir, newdir, **kw):
-    print(f">>>  cd {newdir}")
-    script = "ls -a"
-    _run(script)
-
-
 # https://stackoverflow.com/a/15993574
 def _git_switch_head_only(args, stdin=None):
     branch = args[0]
@@ -682,10 +674,11 @@ def _image_info(args, stdin=None):
 aliases["ii"] = _image_info
 
 
-def _vf(args, stdin=None):
-    args = _insert_stdin(args, stdin)
-    script = ["vifm", "--choose-dir", "-"] + args
-    $dir = _run(script).stdout.decode().strip()
+def _vf(args):
+    $dir = $(vifm --choose-dir - @(args)).strip()
+    if not $dir:
+        echo "Directory picking cancelled/failed"
+        return 1
     cd $dir
 
 
