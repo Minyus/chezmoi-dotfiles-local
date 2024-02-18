@@ -92,6 +92,9 @@ nnoremap A cw
 " New tabnnoremap gn :tabnew<cr>
 nnoremap gn :tabnew<cr>
 
+" Quit quickly
+nnoremap q :q<cr>
+
 
 "------------------------------------------------------------
 " copy path
