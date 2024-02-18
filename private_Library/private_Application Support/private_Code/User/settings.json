@@ -1,0 +1,87 @@
+{
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
+        "statusBar.foreground": "#434C5E"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "python.formatting.provider": "black",
+    "git-graph.maxDepthOfRepoSearch": 1,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "git.scanRepositories": [
+        "/kaggle"
+    ],
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIkNDRkZDQ1wiLFwiOTlGRjk5XCIsXCJGRkZGRkZcIixcIjY2RkZGRlwiLFwiRkZGRjMzXCIsXCI2NkNDMDBcIixcIjFBMUExQVwiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjg1MCxcImhlaWdodFwiOjExMDB9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
+    "svg.preview.mode": "svg",
+    "telemetry.telemetryLevel": "off",
+    "python.formatting.yapfArgs": [
+        "--style={based_on_style = pep8, blank_line_before_nested_class_or_def: true, split_before_expression_after_opening_paren: true}"
+    ],
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.tree.indent": 4,
+    "python.formatting.blackPath": "/Users/ym/opt/miniconda3/bin/black",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "redhat.telemetry.enabled": false,
+    "markdown.marp.enableHtml": true,
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 1,
+    "editor.tabCompletion": "on",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "isort.path": [
+        "/opt/conda/envs/py38/bin/isort"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--show-column-numbers",
+        "--implicit-optional"
+    ],
+    "python.linting.mypyCategorySeverity.error": "Information",
+    "mypy.targets": [
+        "/kaggle/recurtx"
+    ],
+    "mypy.configFile": "/kaggle/recurtx/pyproject.toml",
+    "ruff.run": "onSave",
+    "ruff.fixAll": false,
+    "ruff.codeAction.fixViolation": {
+        "enable": false
+    },
+    "ruff.enable": false,
+    "ruff.codeAction.disableRuleComment": {
+        "enable": false
+    },
+    "ruff.args": [
+        "--config=/kaggle/recurtx/pyproject.toml"
+    ],
+    "cSpell.showStatus": false,
+    "cSpell.diagnosticLevel": "Hint",
+    "terminal.integrated.inheritEnv": false,
+    "black-formatter.showNotifications": "onError",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "notebook.formatOnSave.enabled": true,
+    "black-formatter.path": [
+        "/Users/ym/opt/miniconda3/bin/black"
+    ],
+    "hediet.vscode-drawio.resizeImages": null,
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    }
+}

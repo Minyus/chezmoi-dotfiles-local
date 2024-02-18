@@ -1,0 +1,26 @@
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ym/opt/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ym/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ym/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ym/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# >>> vscode
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# <<<
+
+

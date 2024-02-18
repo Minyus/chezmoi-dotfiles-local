@@ -1,0 +1,28 @@
+# CLI
+xonsh[full]==0.12.4
+prompt-toolkit>=3.0.27
+euporie>=2.0.7
+pyvim
+imgcat
+pipdeptree
+pyinstrument
+
+# utilities
+black
+flatten-dict
+nested-lookup
+loguru
+pydantic
+
+# table data
+pandas
+pandas-profiling[notebook]
+sidetable
+csvkit
+tabulate
+vaex
+modin[dask]
+
+# file access
+fsspec
+# s3fs
