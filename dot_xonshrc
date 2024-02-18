@@ -138,7 +138,7 @@ def _run(script, verbose=True):
 
     import subprocess
 
-    return subprocess.run(script, shell=True)
+    return subprocess.run(script, shell=isinstance(script, str), capture_output=True)
 
 
 # Enable automatic "ls" upon "cd"
@@ -681,5 +681,14 @@ def _image_info(args, stdin=None):
 
 aliases["ii"] = _image_info
 
+
+def _vf(args, stdin=None):
+    args = _insert_stdin(args, stdin)
+    script = ["vifm", "--choose-dir", "-"] + args
+    $dir = _run(script).stdout.decode().strip()
+    cd $dir
+
+
+aliases["vf"] = _vf
 
 print(f"Configured Xonsh: {__file__}")
